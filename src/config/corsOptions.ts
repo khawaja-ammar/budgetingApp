@@ -1,6 +1,6 @@
 import { CorsOptions } from 'cors';
 
-const allowedOrigins: string[] = require('./allowedOrigins');
+import { allowedOrigins } from './allowedOrigins';
 const corsOptions: CorsOptions = {
   origin: (origin, callback) => {
     //remove || !origin in deployment
@@ -17,4 +17,4 @@ const corsOptions: CorsOptions = {
   credentials: true,
 };
 
-export {};
+export { corsOptions };
