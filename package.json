@@ -1,6 +1,6 @@
 {
-  "name": "mvc_views",
-  "version": "1.0.0",
+  "name": "budgetting-app-be",
+  "version": "0.1.0",
   "description": "",
   "main": "server.js",
   "scripts": {
