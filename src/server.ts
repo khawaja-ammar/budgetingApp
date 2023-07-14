@@ -6,7 +6,7 @@ import fs from 'fs';
 
 dotenv.config();
 // const {PORT} = process.env
-const PORT = +process.env.PORT || 3500;
+const PORT = process.env.PORT || '3500';
 
 // SSL/TLS config
 const httpsOptions = {
@@ -19,7 +19,7 @@ import { corsOptions } from './config/corsOptions';
 const app = express();
 // Middleware
 app.use(express.json());
-// app.use(cors(), corsOptions);
+app.use(cors(corsOptions));
 
 // API (GraphQL)
 // TODO: Api routes (with embedded controllers)
