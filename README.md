@@ -7,4 +7,4 @@
 - GraphQL Web APIs
 - SQLite + Kysley/Drizzle
 
-- TDD using Jest?
+- TDD using Jest
